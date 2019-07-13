@@ -27,3 +27,7 @@ class Person(val firstName: String, val lastName: String, val age: Int?) {
 fun Person.getAge(): Int {
     return this.age ?: 0
 }
+
+infix fun Person.older(other: Person): Boolean {
+    return this.getAge() > other.getAge()
+}

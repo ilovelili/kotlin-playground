@@ -15,4 +15,13 @@ fun main(args: Array<String>) {
     println(p1.name)
     println(showFirstChar("ade"))
     println(p1.getAge())
+
+    val (pi, e) = multiReturn()
+    println(pi)
+    println(e)
+
+    val p2 = Person("John", "Doe", 32)
+    if (p2 older p1) {
+        println("infix works")
+    }
 }
